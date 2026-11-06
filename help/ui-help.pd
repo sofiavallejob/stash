@@ -1,0 +1,9 @@
+#N canvas 60 40 780 520 12;
+#X obj 0 0 cnv 1 780 52 empty empty stash/ui 20 26 0 20 #ececec #202020 0;
+#X text 20 70 A ready-made preset panel for a namespace: slot number \, store \, recall \, previous and next. Shows the slot label set with rename., f 70;
+#X obj 20 130 cnv 1 740 1 empty empty empty 0 0 0 12 #c8c8c8 #c8c8c8 0;
+#X text 20 138 example;
+#X obj 40 170 stash/ui demo;
+#X obj 40 300 stash/bank demo;
+#X obj 260 300 stash/param demo cutoff 20 20000 exp;
+#X text 40 350 it talks to the bank through demo-bank and listens on demo-events \, so it needs no wires. Use as many as you like., f 70;
