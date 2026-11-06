@@ -1,0 +1,12 @@
+#N canvas 40 40 600 400 12;
+#X obj 30 30 inlet;
+#X obj 30 66 param \$1 \$2 0 0 list;
+#X obj 330 30 array get \$3;
+#X obj 30 102 array set \$3;
+#X obj 30 174 outlet;
+#X text 30 282 stash/array: args namespace name arrayname;
+#X connect 0 0 1 0;
+#X connect 1 2 2 0;
+#X connect 2 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 4 0;
